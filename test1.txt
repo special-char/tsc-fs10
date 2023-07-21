@@ -1,3 +1,0 @@
-hello
-
-direct move to staging server
