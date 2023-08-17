@@ -31,7 +31,7 @@
       property="twitter:image"
       content="https://res.cloudinary.com/dxiuorf1x/image/upload/v1691859875/jayni_rjshav.jpg"
     />
-<!-- Twitter ends -->
+    <!-- Twitter ends -->
 
     <!-- chatbot -->
     <script type="text/javascript" id="zsiqchat">
@@ -55,44 +55,98 @@
 
     <!-- json product / data will come dynamically-->
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org/",
-          "@type": "Product",
-          "name": "Executive Anvil",
-          "description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
-          "review": {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": 4,
-              "bestRating": 5
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Fred Benson"
-            }
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Executive Anvil",
+        "description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": 4,
+            "bestRating": 5
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": 4.4,
-            "reviewCount": 89
+          "author": {
+            "@type": "Person",
+            "name": "Fred Benson"
           }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.4,
+          "reviewCount": 89
         }
-        </script>
+      }
+    </script>
     <!-- json product ends -->
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
-<link rel="manifest" href="/Assets/site.webmanifest">
-<link rel="mask-icon" href="/Assets/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#9f00a7">
-<meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/Assets/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- favicon ends -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css ends -->
   </head>
   <body>
-    <h1>Hello</h1>
-    <h2>jayni</h2>
+    <section class="menu">
+      <div class="nav">
+        <div class="logo">
+          <h1><b>JAYNI PATEL </b></h1>
+        </div>
+        <div class="hamburger-icon">&#9776;</div>
+        <ul>
+          <li>
+            <b><a href="#">Home</a></b>
+          </li>
+          <li>
+            <b><a href="#">Education</a></b>
+          </li>
+          <li>
+            <b><a href="#">Experience</a></b>
+          </li>
+          <li>
+            <b><a href="#">Skill Sets</a></b>
+          </li>
+          <li>
+            <b><a href="#">About Me</a></b>
+          </li>
+          <li>
+            <b><a href="#">Contact</a></b>
+          </li>
+          <a href="login.html" class="signin">Log In</a>
+        </ul>
+        <div>
+          <!-- <div>
+         <a href="login.html" class="signin">Sign in</a>
+     </div> -->
+        </div>
+      </div>
+    </section>
   </body>
 </html>
