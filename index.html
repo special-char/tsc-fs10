@@ -141,8 +141,40 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="shortcut icon" href="./assets/home.svg" type="image/svg+xml" />
+    <!-- <style>
+      .box {
+        width: 100vw;
+        height: 100vh;
+        background-color: red;
+      }
+
+      @media screen and (max-width:1280px) {
+        .box {
+          background-color: gold;
+        }
+      }
+
+      @media screen and (max-width:1024px) {
+        .box {
+          background-color: coral;
+        }
+      }
+
+      @media screen and (max-width:640px) {
+        .box {
+          background-color: yellow;
+        }
+      }
+
+     
+
+      
+    </style> -->
   </head>
   <body>
+    <div class="box">
+
+    </div>
     <!-- SEO -->
     <!-- Accesibility -->
     <!-- UI -->
@@ -186,124 +218,83 @@
       </nav>
     </header>
 
+    <!-- jpg -->
+    <!-- png -->
+
+    <!-- Web -->
+
+    <!-- webp -->
+    <!-- avif -->
+
+
     <main>
       <section id="subscribe">
-        <form>
-          <fieldset>
-            <div>
-              <label
-                for="firstName"
-                style="
-                  position: absolute;
-                  width: 1px;
-                  height: 1px;
-                  padding: 0;
-                  margin: -1px;
-                  overflow: hidden;
-                  clip: rect(0, 0, 0, 0);
-                  white-space: nowrap;
-                  border-width: 0;
-                "
-                >First Name</label
-              >
-              <input type="text" id="firstName" required enterkeyhint="done" />
-            </div>
-            <div>
-              <label
-                for="lastname"
-                style="
-                  position: absolute;
-                  width: 1px;
-                  height: 1px;
-                  padding: 0;
-                  margin: -1px;
-                  overflow: hidden;
-                  clip: rect(0, 0, 0, 0);
-                  white-space: nowrap;
-                  border-width: 0;
-                "
-                >First Name</label
-              >
-              <input type="text" id="lastname" />
-            </div>
-          </fieldset>
+        <form oninput="result.value = range.value; ">
           <div>
-            <label
-              for="email"
-              style="
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0, 0, 0, 0);
-                white-space: nowrap;
-                border-width: 0;
-              "
-              >Email</label
-            >
-            <input type="color" id="email" />
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" autocomplete="name" autofocus autocapitalize="none" placeholder="Full Name" maxlength="10">
           </div>
 
           <div>
-            <label
-              for="gender"
-              style="
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0, 0, 0, 0);
-                white-space: nowrap;
-                border-width: 0;
-              "
-              >Gender</label
-            >
-            <select name="gender" id="gender">
-              <optgroup label="Sports">
-                <option value="cricket">Criket</option>
-                <option value="football">Football</option>
-              </optgroup>
-              <optgroup label="Activity">
-                <option value="dancing">Dancing</option>
-                <option value="painting">Painting</option>
-              </optgroup>
-              <option value="">Please Select gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autocomplete="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,4}">
           </div>
 
           <div>
-            <label for="college">College</label>
-            <input type="text" list="collegeList">
-            <datalist id="collegeList">
-              <option>Nirma</option>
-              <option>LDRP</option>
-              <option>Indus</option>
-              <option>SAL</option>
-            </datalist>
+            <label for="mobile_number">Mobile</label>
+            <input type="tel" name="mobile_number" id="mobile_number" autocomplete="one">
           </div>
 
           <fieldset>
             <legend>Gender</legend>
             <div>
-              <input type="radio" name="Gender" id="male" />
+              <input type="radio" name="gender" id="male">
               <label for="male">Male</label>
             </div>
             <div>
-              <input type="radio" name="Gender" id="female" />
+              <input type="radio" name="gender" id="female">
               <label for="female">Female</label>
             </div>
           </fieldset>
+
+          <select name="gender" id="gender" autocomplete="sex">
+            <option value="">Please Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+          <div>
+            <label for="birth_date">Birth Date</label>
+            <input type="date" name="birth_date" id="birth_date" autocomplete="bday">
+          </div>
+
+          <div>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range" value="20" min="10" max="50">
+            <output name="result" for="range">20</output>
+          </div>
+
+
+
           <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          
         </form>
       </section>
     </main>
+
+    <!-- <img src="./assets/banner@3x.jpg" alt="" width="500px" height="300px"> -->
+
+    <picture>
+      <source srcset="./assets/banner@3x.jpg" media="(min-width:1024px)" />
+      <source srcset="./assets/banner@2x.jpg" media="(min-width:640px)" />
+      <img src="./assets/banner@1x.jpg" alt="banner">
+    </picture>
+
+    <picture>
+      <source srcset="./assets/banner@1x.avif" type="image/avif"  />
+      <source srcset="./assets/banner@1x.webp" type="image/webp"  />
+      <img src="./assets/banner@1x.jpg" alt="banner">
+    </picture>
 
     <!-- <ruby></ruby>
 
