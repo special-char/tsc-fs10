@@ -1,18 +1,36 @@
-.nav {
-  display: flex;
-  flex-direction: column;
+:root {
+  background-color: pink;
 }
-.logo header {
-  font-size: 30px;
+* {
   font-family: "Times New Roman", Times, serif;
-  font-weight: 200;
-  color: red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  line-height: 1.5;
 }
 
-.logo ul li a {
-  text-align: left;
-  font-size: 10px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 200;
-  color: green;
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+  padding-left: 30rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: palevioletred;
+  display: flex;
+  align-items: center;
 }
