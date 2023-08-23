@@ -13,6 +13,7 @@
     <meta name="keywords" content="react.js, react-native" />
     <meta property="og:title" content="Yagnesh Modh" />
     <meta property="og:description" content="Personal Portfolio" />
+    <!-- <link rel="preload" as="image" href="./assets/banner@1x.jpg"> -->
     <meta
       property="og:image"
       content="https://res.cloudinary.com/dnxzgxivo/image/upload/v1691580094/thumbnail_download_6_8720a3756c.png"
@@ -83,7 +84,7 @@
       }
     </script>
 
-    <script type="text/javascript" id="zsiqchat">
+    <!-- <script type="text/javascript" id="zsiqchat">
       var $zoho = $zoho || {};
       $zoho.salesiq = $zoho.salesiq || {
         widgetcode:
@@ -99,7 +100,7 @@
       s.src = "https://salesiq.zoho.in/widget";
       t = d.getElementsByTagName("script")[0];
       t.parentNode.insertBefore(s, t);
-    </script>
+    </script> -->
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -172,9 +173,7 @@
     </style> -->
   </head>
   <body>
-    <div class="box">
-
-    </div>
+    <div class="box"></div>
     <!-- SEO -->
     <!-- Accesibility -->
     <!-- UI -->
@@ -226,33 +225,52 @@
     <!-- webp -->
     <!-- avif -->
 
-
     <main>
       <section id="subscribe">
         <form oninput="result.value = range.value; ">
           <div>
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" autocomplete="name" autofocus autocapitalize="none" placeholder="Full Name" maxlength="10">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="name"
+              autofocus
+              autocapitalize="none"
+              placeholder="Full Name"
+              maxlength="10"
+            />
           </div>
 
           <div>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" autocomplete="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,4}">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,4}"
+            />
           </div>
 
           <div>
             <label for="mobile_number">Mobile</label>
-            <input type="tel" name="mobile_number" id="mobile_number" autocomplete="one">
+            <input
+              type="tel"
+              name="mobile_number"
+              id="mobile_number"
+              autocomplete="one"
+            />
           </div>
 
           <fieldset>
             <legend>Gender</legend>
             <div>
-              <input type="radio" name="gender" id="male">
+              <input type="radio" name="gender" id="male" />
               <label for="male">Male</label>
             </div>
             <div>
-              <input type="radio" name="gender" id="female">
+              <input type="radio" name="gender" id="female" />
               <label for="female">Female</label>
             </div>
           </fieldset>
@@ -265,26 +283,35 @@
 
           <div>
             <label for="birth_date">Birth Date</label>
-            <input type="date" name="birth_date" id="birth_date" autocomplete="bday">
+            <input
+              type="date"
+              name="birth_date"
+              id="birth_date"
+              autocomplete="bday"
+            />
           </div>
 
           <div>
             <label for="range">Range</label>
-            <input type="range" name="range" id="range" value="20" min="10" max="50">
+            <input
+              type="range"
+              name="range"
+              id="range"
+              value="20"
+              min="10"
+              max="50"
+            />
             <output name="result" for="range">20</output>
           </div>
 
-
-
           <button type="submit">Submit</button>
-          
         </form>
       </section>
     </main>
 
     <!-- <img src="./assets/banner@3x.jpg" alt="" width="500px" height="300px"> -->
 
-    <picture>
+    <!-- <picture>
       <source srcset="./assets/banner@3x.jpg" media="(min-width:1024px)" />
       <source srcset="./assets/banner@2x.jpg" media="(min-width:640px)" />
       <img src="./assets/banner@1x.jpg" alt="banner">
@@ -294,7 +321,43 @@
       <source srcset="./assets/banner@1x.avif" type="image/avif"  />
       <source srcset="./assets/banner@1x.webp" type="image/webp"  />
       <img src="./assets/banner@1x.jpg" alt="banner">
-    </picture>
+    </picture> -->
+
+    <!-- w-300 -->
+    <!-- ar-4-3 -->
+
+    <!-- <picture>
+      <source srcset="./assets/banner@1x.jpg 1x, ./assets/banner@2x.jpg 2x"  type="image/webp" />
+      <img src="./assets/banner@3x.jpg" alt="logo" />
+    </picture> -->
+
+    <img
+      src="https://ik.imagekit.io/mdzi40eohii/production/images/Webinar_25th_958a8ff27c_Qv4DGltFJ.png?tr=w-400,ar-16-9"
+      alt="banner"
+      style="width: 400px; aspect-ratio: 16/ 9"
+    />
+
+    <video controls width="400px" height="300px" controlslist="nofullscreen nodownload" playsinline="true" poster="https://ik.imagekit.io/mdzi40eohii/production/images/Webinar_25th_958a8ff27c_Qv4DGltFJ.png?tr=w-400,ar-16-9">
+      <source
+        src="https://res.cloudinary.com/thespecialcharacter-com/video/upload/v1615874980/9_3676218e4f.mp4"
+      />
+      Download the
+      <a href="https://res.cloudinary.com/thespecialcharacter-com/video/upload/v1615874980/9_3676218e4f.mp4">WEBM</a>
+      video.
+    </video>
+
+    <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" controlslist="nodownload">
+    </audio>
+
+    <!-- <div style="width: 100vw; height: 100vh">
+      <img src="./assets/banner@1x.jpg" alt="home" height="100%" width="100%" loading="eager" />
+    </div>
+    <div style="width: 100vw; height: 100vh">
+      <img src="./assets/banner@2x.jpg" alt="home" height="100%" width="100%" />
+    </div>
+    <div style="width: 100vw; height: 100vh">
+      <img src="./assets/banner@3x.jpg" alt="home" height="100%" width="100%" />
+    </div> -->
 
     <!-- <ruby></ruby>
 
