@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .wrapper > .box:nth-child(1) {
+        flex-basis: 300px;
+        aspect-ratio: 1 / 1;
+        flex-shrink: 0;
+        background-color: aqua;
+      }
+
+      .wrapper > .box {
+        flex-shrink: 0;
+      }
+      .wrapper > .box:nth-child(2) {
+        flex-grow: 2;
+        background-color: rgb(3, 27, 27);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">item 1</div>
+      <div class="box">item 2</div>
+    </div>
+  </body>
+</html>
