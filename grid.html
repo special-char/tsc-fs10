@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Css</title>
+    <style>
+      .wrapper {
+        display: grid;
+        /* grid-template-columns: 100px 100px 100px; */
+        grid-template-rows: repeat(2, 100px);
+        gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+        /* will fit the screen  */
+
+        .box:nth-child(1) {
+          grid-row: 1/3;
+          /* grid-row: 1/ -1; optional */
+          grid-column: span 2;
+        }
+      }
+
+      .box {
+        background-color: palegoldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+      .wrapper {
+        display: flex;
+        gap: 10px;
+        height: 50vh;
+      }
+
+      .box {
+        background-color: purple;
+        flex: 1;
+        height: 200px;
+
+        color: white;
+      }
+      .box:nth-child(1) {
+        align-self: flex-start;
+      }
+
+      .box:nth-child(2) {
+        align-self: center;
+      }
+
+      .box:nth-child(3) {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </body>
+</html>
