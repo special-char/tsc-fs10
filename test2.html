@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <title>Document</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+
+        nav > ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav > ul > li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            flex: 1 1 auto;
+            background-color: dodgerblue;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        main > section {
+            flex: 2 0 600px;
+            background-color: gold;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        main > section > div {
+            flex: 1 0 300px;
+            background-color: blue;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+
+        main > section > div > div {
+            flex: 1 0 200px;
+            background-color: burlywood;
+            
+        }
+
+
+        main > aside {
+            flex: 1 1 auto;
+            background-color: blueviolet;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer > .box {
+            flex: 1 0 300px;
+            aspect-ratio: 1 /1;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>banner</div>
+            <div>
+                <div>title</div>
+                <div>description</div>
+            </div>
+
+        </section>
+        <aside>
+        </aside>
+    </main>
+    <footer>
+        <div class="box">item 1</div>
+        <div class="box">item 2</div>
+        <div class="box">item 3</div>
+    </footer>
+</body>
+</html>
