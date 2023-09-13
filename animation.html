@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0% {
+                scale: 1;
+                rotate: 0deg;
+                translate: 0 0;
+            }
+            25% {
+                scale: 1.2;
+                rotate: 10deg;
+                translate: 200px 0;
+            }
+
+            50% {
+                scale: 1.5;
+                rotate: 30deg;
+                translate: 300px 0;
+            }
+
+            75% {
+                scale: 1.2;
+                rotate: 15deg;
+                translate: 150px 0;
+            }
+
+            100% {
+                scale: 1;
+                rotate: 0deg;
+                translate: 0 0;
+            }
+            
+        }
+
+        .wrapper {
+            display: grid;
+            place-content: center;
+            height: 100vh;
+            perspective: 200px;
+        }
+
+        .wrapper > .box {
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            /* transition: all 2s ease-in-out; */
+        }
+
+        
+        .wrapper:has(button:hover) > .box {
+            animation: move 2s linear 0s 5;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <dialog id="box">
+            <h1>hello world</h1>
+        </dialog>
+
+        <a href="#box">Open Dialog</a>
+    </div>
+</body>
+</html>
