@@ -101,7 +101,7 @@
     <!-- single h1 in entire page -->
     <!-- sequance -->
 
-    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h1 title="lorem asdflasfl;asfd ;lkasd;lfkasfd">Lorem ipsum dolor sit amet.</h1>
     <h2>Lorem ipsum dolor sit amet.</h2>
     <h2>Lorem ipsum dolor sit amet.</h2>
     <h3>Lorem ipsum dolor sit amet.</h3>
@@ -110,6 +110,9 @@
     <h3>Lorem ipsum dolor sit amet.</h3>
     <h2>Lorem ipsum dolor sit amet.</h2>
 
+    <button popovertarget="my-popover">Open Popover</button>
+
+  <div popover id="my-popover">Greetings, one and all!</div>
     <p>
       Lorem, ipsum dolor sit amet <em>consectetur</em>
       <strong>adipisicing</strong> elit. <mark>Delectus</mark> aliquam harum
@@ -134,29 +137,151 @@
       <div id="section5" style="height: 100vh;background-color: green;"></div>
       <div id="section6" style="height: 100vh;background-color: yellow;"></div> -->
 
-    <form>
-      <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" required maxlength="10" minlength="3" />
-      </div>
-      <div>
+    <form oninput="ageResult.value=parseInt(age.value)">
+      <fieldset>
+        <legend>Name</legend>
+        <div>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            required=""
+            maxlength="10"
+            minlength="3"
+            autocomplete="given-name"
+            autofocus
+            title="Please enter first name"
+            enterkeyhint="next"
+          />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            required
+            maxlength="10"
+            minlength="3"
+            autocomplete="family-name"
+            enterkeyhint="next"
+          />
+        </div>
+      </fieldset>
+      <!-- <div>
         <label for="age">Age</label>
         <input type="number" id="age" required min="18" max="100" />
-      </div>
+      </div> -->
       <div class="relative">
-        <label for="email" style="position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border-width: 0;">Email</label>
-        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" placeholder="enter email here ..." required title="Please Enter valid email" />
+        <label
+          for="email"
+          style="
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+          "
+          >Email</label
+        >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}"
+          placeholder="enter email here ..."
+          required
+          title="Please Enter valid email"
+        />
       </div>
-      <button type="submit">Submit</button>
 
+      <!-- dropdown -->
+      <select name="college" id="college" required>
+        <option value="">Please select College</option>
+        <option value="indus">Indus</option>
+        <option value="nirma">Nirma</option>
+        <option value="SAL">SAL</option>
+      </select>
+
+      <div>
+        <label for="college">College</label>
+        <input type="text" id="college" list="collegeList" />
+        <datalist id="collegeList">
+          <option>Nirma</option>
+          <option>SAL</option>
+          <option>Indus</option>
+          <option>LDRP</option>
+        </datalist>
+      </div>
+
+      <select name="hobby" id="hobby" multiple>
+        <option value="">Please Select Hobby</option>
+        <optgroup label="Sports">
+          <option value="cricket">Cricket</option>
+          <option value="football">Football</option>
+        </optgroup>
+        <optgroup label="activity">
+          <option value="dance">Dance</option>
+          <option value="singing">Singing</option>
+        </optgroup>
+      </select>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+
+      <label for="gender">Gender</label>
+      <select name="gender" id="gender" autocomplete="sex">
+        <option value="">Please Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="range" name="age" id="age" min="18" max="100" value="25">
+        <output name="ageResult" for="age">25</output>
+      </div>
+      <!-- <meter id="fuel" min="0" max="100" low="33" high="66" optimum="40" value="67">at 50/100</meter> -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
+
+    <!-- sementic elements -->
+
+    <header>
+      <nav></nav>
+    </header>
+    <aside></aside>
+    <main>
+      <!-- <div role="alert"></div> -->
+      <section>
+        <article></article>
+        <time></time>
+        <address></address>
+        <details>
+
+        </details>
+      </section>
+    </main>
+    <aside></aside>
+    <dialog>
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit accusantium tempore nisi neque illum eius, eveniet laudantium delectus laborum esse dignissimos doloribus voluptatum facilis quaerat enim tempora sequi. Quas.</h1>
+    </dialog>
+    <footer>
+
+    </footer>
+
   </body>
 </html>
