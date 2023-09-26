@@ -1,0 +1,43 @@
+const obj={
+    a:1, b:2, c:3
+}
+
+const newObj = {...obj,d: 4, c: 6 }
+const {a,b,...rest} = newObj
+console.log(rest);
+const c = 15; 
+const d = 20;
+
+const {c:restC,d:restD} = rest;
+console.log(c);
+console.log(d);
+console.log(restC);
+console.log(restD);
+
+const key1="a"
+const key2="b"
+
+const {[key1: abc],[key2: pqr]}= obj;
+
+
+//add prop d
+// obj.d = 4;
+// console.log(obj)
+
+ //update property c
+//  obj.c = 5;
+//  console.log(obj)
+
+
+   //declare following variables on top
+//    const c = 15;
+//    const d = 20;
+
+  //delete a,b
+//   delete obj.a;
+//   console.log(obj);
+
+//   delete obj.b;
+//   console.log(obj);
+  
+  
