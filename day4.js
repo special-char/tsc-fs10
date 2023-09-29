@@ -66,14 +66,6 @@
 
 
 
-//Value equal to index value 145
-
-//Print alternate elements of an array 146
-
-//Palindromic Array 147
-
-//Swap kth elements 148 150
-
 //to do
 //Display longest name
 //Perfect Arrays
