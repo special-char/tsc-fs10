@@ -231,3 +231,35 @@ const rating1= product.every(item=> {
     return item.rating>2
 })
 console.log(rating1);
+
+// to find index
+const index= product.findIndex((element) => {
+    return element.title === "Mens Casual Slim Fit"
+  
+});
+console.log(index);
+
+//to update price
+console.log(product[index]);
+
+const updatedProducts= [
+    ...product.slice(0, index),
+    {...product[index], price: 50},
+    ...product.slice(index+1)
+]
+
+console.log(updatedProducts)
+
+//to change rating immutabley without changing data in original object 
+
+console.log(index);
+
+const updatedRating= [
+    ...product.slice(0, index),
+    {...product[index], rating: {...product[index].rating, rate : 5 }},
+    ...product.slice(index+1)
+]
+
+console.log(updatedRating)
+
+
